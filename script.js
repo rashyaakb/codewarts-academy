@@ -19,5 +19,12 @@ const scratchSlots = document.querySelectorAll('#scratch-projects .empty-project
 if (scratchSlots[0]) {
   scratchSlots[0].classList.remove('empty-project');
   scratchSlots[0].classList.add('featured');
-  scratchSlots[0].innerHTML = `<div class="project-media"><video controls preload="metadata" aria-label="Space Shooter Scratch game"><source src="assets/scratch-space-shooter.mp4" type="video/mp4" />Your browser does not support this video.</video></div><div class="project-info"><span>Project 02</span><h4>Space Shooter Game</h4><p>A fast-paced Scratch game built by a young Codewarts creator.</p></div>`;
+  scratchSlots[0].innerHTML = `<div class="project-media"><video controls preload="metadata" aria-label="Space Shooter Scratch game"><source src="assets/scratch-space-shooter.mp4" type="video/mp4" />Your browser does not support this video.</video></div><div class="project-info"><span>Project 02</span><h4>Space Shooter Game</h4><p>Learn to create a shooter game with projectiles.</p></div>`;
 }
+if (scratchSlots[1]) {
+  scratchSlots[1].classList.remove('empty-project');
+  scratchSlots[1].classList.add('featured');
+  scratchSlots[1].innerHTML = `<div class="project-media"><video controls preload="metadata" aria-label="Pingpong Scratch game"><source src="assets/scratch-pingpong.mp4" type="video/mp4" />Your browser does not support this video.</video></div><div class="project-info"><span>Project 03</span><h4>Pingpong Game</h4><p>Understand how to use physics in code to make a pingpong-like function!</p></div>`;
+}
+const marioDescription = document.querySelector('#scratch-projects .project-card:first-of-type .project-info p');
+if (marioDescription) marioDescription.textContent = 'Create a game where you control a character on its adventure.';
