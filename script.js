@@ -15,3 +15,9 @@ function showProjectTab(tabName) {
 }
 projectTabs.forEach(tab => tab.addEventListener('click', () => showProjectTab(tab.dataset.tab)));
 document.querySelectorAll('.project-link').forEach(link => link.addEventListener('click', () => showProjectTab(link.dataset.projectTab)));
+const scratchSlots = document.querySelectorAll('#scratch-projects .empty-project');
+if (scratchSlots[0]) {
+  scratchSlots[0].classList.remove('empty-project');
+  scratchSlots[0].classList.add('featured');
+  scratchSlots[0].innerHTML = `<div class="project-media"><video controls preload="metadata" aria-label="Space Shooter Scratch game"><source src="assets/scratch-space-shooter.mp4" type="video/mp4" />Your browser does not support this video.</video></div><div class="project-info"><span>Project 02</span><h4>Space Shooter Game</h4><p>A fast-paced Scratch game built by a young Codewarts creator.</p></div>`;
+}
