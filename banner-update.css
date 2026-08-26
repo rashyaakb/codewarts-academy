@@ -1,0 +1,5 @@
+/* Original Codewarts banner collection, cropped into individual programme crests. */
+.programme .lesson-banner{width:142px;height:180px;margin:-6px auto -5px;object-fit:contain}
+.programme a{width:auto!important;height:auto!important;display:inline-flex!important;align-items:center;gap:8px;right:22px!important;bottom:21px!important;padding:9px 13px!important;border-radius:4px!important;font-size:13px!important;font-weight:600;line-height:1!important;white-space:nowrap;box-shadow:0 3px 0 rgba(30,36,55,.18)}
+.programme a span{font-size:17px;line-height:.7}.programme a:hover{transform:translateY(-2px);box-shadow:0 5px 0 rgba(30,36,55,.18)}
+@media(max-width:760px){.programme .lesson-banner{width:120px;height:152px}.programme a{right:20px!important}}
