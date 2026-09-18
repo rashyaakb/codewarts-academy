@@ -28,3 +28,15 @@ if (scratchSlots[1]) {
 }
 const marioDescription = document.querySelector('#scratch-projects .project-card:first-of-type .project-info p');
 if (marioDescription) marioDescription.textContent = 'Create a game where you control a character on its adventure.';
+
+const bookingForm = document.querySelector('#trial-booking-form');
+bookingForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  const details = new FormData(bookingForm);
+  const name = details.get('name');
+  const age = details.get('age');
+  const programme = details.get('programme') || 'Not sure yet';
+  const project = details.get('message') || 'Not sure yet';
+  const message = `Hi Codewarts Academy! I’d like to book a free 30-minute trial for my child.\n\nParent / guardian: ${name}\nChild’s age: ${age}\nInterested in: ${programme}\nThey would love to make: ${project}`;
+  window.open(`https://wa.me/60177090340?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
+});
